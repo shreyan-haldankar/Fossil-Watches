@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fossil SmartWatch</title>
+    <link rel="stylesheet" href="scss/watch.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  </head>
+  <body>
+    <section class="main_page">
+      <!-- Cirlce  -->
+      <div class="circle"></div>
+
+      <header>
+        <a href="#" class="logo">
+          <img src="assets/logo.png" width="200px" height="65px" alt="FOSSIL" />
+        </a>
+
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="/index.html#featured-products">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h1>Gen 3 Smartwatch Explorist Stainless Steel</h1>
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>Notifications: </strong>Alarm Clock, App Alerts, Calendar Alerts, Email, Multiple Time Zones, Social Media, Text</li>
+            <li><strong>Connectivity: </strong>Quartz Chronograph</li>
+            <li><strong>Compatibility: </strong>Bluetooth Smart Enabled/4.2</li>
+            <li><strong>Battery Life: </strong>Upto 2 days</li>
+            <li><strong>Operating System: </strong>Wear OS by Google</li>
+          </ul>
+
+          <span class="price" data-text="Rs.19,999/-">Rs.13,999/-</span>
+          <div class="buttons">
+            <a href="#"><button>Buy Now</button></a>
+            <a href="#"><button>Add to Cart</button></a>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="imgBox">
+          <img src="assets/watch3.png" width="350px" class="watch" alt="" />
+        </div>
+      </div>
+
+      <!-- Not necessary to Include -->
+      <ul class="thumb">
+        <li>
+          <a href="watch1.html"><img src="assets/watch1.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="watch2.html"><img src="assets/watch2.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="watch3.html"><img src="assets/watch3.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".toggle");
+        const navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
